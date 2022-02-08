@@ -12,9 +12,9 @@ class SecondePage extends StatefulWidget {
 class _SecondePageState extends State<SecondePage> {
   @override
   Widget build(BuildContext context) {
-    List<Produits> produits = [
-      Produits("assets/Burger.jpg", "Burger", "description 1", 10, false),
-    ];
+    // List<Produits> produits = [
+    //   // Produits("assets/Burger.jpg", "Burger", "description 1", 10, false),
+    // ];
     return Scaffold(
       appBar: AppBar(
         title: Text(

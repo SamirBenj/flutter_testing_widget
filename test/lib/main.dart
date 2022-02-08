@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
+import 'HomePage.dart';
 import 'SecondePage.dart';
 
 void main() {
@@ -51,10 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: ElevatedButton(∏
+                child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => SecondePage()));
+                        MaterialPageRoute(builder: (context) => HomePage()));
                   },
                   child: Text('Commencer'),
                 ),

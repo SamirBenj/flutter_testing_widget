@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import 'HomePage.dart';
 import 'SecondePage.dart';
-import 'categorie.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,10 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => CategoriePage()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomePage()));
                   },
                   child: Text('Commencer'),
                 ),

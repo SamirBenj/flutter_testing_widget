@@ -38,11 +38,34 @@ class HomePage extends StatelessWidget {
                     itemBuilder: (BuildContext context, int index) {
                       print(produits[index]['nom'].toString());
                       var nom = produits[index]['nom'];
+
                       bool test = false;
                       if (nom == "burger") {
                         test = true;
                       }
-                      return Text(nom);
+                      return Padding(
+                        padding: const EdgeInsets.all(15.0),
+                        child: Material(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10),
+                          elevation: 2.0,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                produits[index]['nom'].toString(),
+                              ),
+                              Image.asset(
+                                'assets/${produits[index]['image']}',
+                                height: 100,
+                              ),
+                              Text(
+                                'Prix :${produits[index]['prix']}',
+                              )
+                            ],
+                          ),
+                        ),
+                      );
                     },
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       mainAxisSpacing: 20,

@@ -42,12 +42,7 @@ class HomePage extends StatelessWidget {
                       if (nom == "burger") {
                         test = true;
                       }
-                      return test
-                          ? Card(
-                              margin: EdgeInsets.all(30),
-                              child: Text(nom),
-                            )
-                          : Text('data');
+                      return Text(nom);
                     },
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       mainAxisSpacing: 20,

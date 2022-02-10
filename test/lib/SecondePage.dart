@@ -48,6 +48,8 @@ class _SecondePageState extends State<SecondePage> {
               ],
             ),
           ),
+
+          //text Burger + ligne/image burger
           Card(
             elevation: 5.0,
             color: Colors.blue,
@@ -82,6 +84,7 @@ class _SecondePageState extends State<SecondePage> {
               ),
             ),
           ),
+          //Fin
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Material(
